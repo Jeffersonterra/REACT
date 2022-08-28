@@ -1,0 +1,134 @@
+#tabuleiro{
+    width: 630px;
+    height: 630px;
+    border: 1px solid black;
+    background-color: black;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+   
+}
+#posicao1{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
+#posicao2{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 210px;
+    top: 0px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
+#posicao3{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 420px;
+    top: 0px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
+#posicao4{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 210px;  
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
+#posicao5{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 210px;
+    top: 210px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
+#posicao6{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 420px;
+    top: 210px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
+#posicao7{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 0px;
+    top: 420px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
+
+#posicao8{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 210px;
+    top: 420px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
+
+#posicao9{
+    width: 200px;
+    height: 200px;
+    border: 5px solid white;
+    background-color: #054F77;
+    margin: auto;
+    position: absolute;
+    left: 420px;
+    top: 420px;
+    text-align: center;
+    line-height: 200px;
+    font-size: 1500%;
+}
