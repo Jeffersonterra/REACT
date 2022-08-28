@@ -1,0 +1,2 @@
+Simples jogo da velha em HTML CSS JS com um clique para jogador X e clique duplo para jogados O.
+Alert window para vitoria de jogador sera finalizado ainda.
