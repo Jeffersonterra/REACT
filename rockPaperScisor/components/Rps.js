@@ -1,12 +1,16 @@
-import React, { Component, value } from 'react'
+import React, { Component, value , playerOne, playerTwo} from 'react'
 
 export class Rps extends Component {
     render() {
+        
       function ClickRock() {
           
              window.alert('Rock')
              let value = Math.random();
              window.alert(value)
+             const playerOne = 'Rock';
+             window.alert(playerOne);
+            
              if (value < 0.3)
              {
                 window.alert('Oponent chose Rock, its a Tie!')
@@ -25,6 +29,8 @@ export class Rps extends Component {
             window.alert('Paper')
             let value = Math.random();
             window.alert(value)
+            var playerOne = 'Paper';
+            window.alert(playerOne);
             if (value < 0.3)
              {
                 window.alert('Oponent chose Rock, you Win!')
@@ -43,7 +49,9 @@ export class Rps extends Component {
           
             window.alert('Scisor')
             let value = Math.random();
-            window.alert(value)
+            window.alert(value);
+            var playerOne = 'Scisor';
+            window.alert(playerOne);
             if (value < 0.3)
              {
                 window.alert('Oponent chose Rock, you Lose!')
@@ -58,7 +66,7 @@ export class Rps extends Component {
              }
          }
     return (<div className="Rps" >
-
+        <div className= "playerOnes"> Player one {playerOne}</div><div className= "playerTwos"> Player two {playerTwo}</div>
       <button className= "Rock"  onClick= {ClickRock} >Rock</button>
       <button className= "Paper" onClick= {ClickPaper}>Paper</button>
       <button className= "Scisor"  onClick= {ClickScisor} >Scisor</button>
