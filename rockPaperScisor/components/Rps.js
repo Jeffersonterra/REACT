@@ -1,8 +1,31 @@
 import React, { Component, value , playerOne, playerTwo} from 'react'
 
 export class Rps extends Component {
-    render() {
-        
+ 
+   constructor() {
+      super()
+      this.state={
+          message: 'Welcome player One' 
+          
+          }
+          }
+          
+          changeMessage() {
+              this.setState({
+                  message: 'Player one chose Rock!'
+              })
+          }
+          changeMessage2() {
+              this.setState({
+                  message: 'Player one chose Paper!'
+              })
+          }
+          changeMessage3() {
+            this.setState({
+                message: 'Player one chose Scisor!'
+            })
+        }
+   render() {
       function ClickRock() {
           
              window.alert('Rock')
@@ -10,6 +33,7 @@ export class Rps extends Component {
              window.alert(value)
              const playerOne = 'Rock';
              window.alert(playerOne);
+             
             
              if (value < 0.3)
              {
@@ -24,6 +48,7 @@ export class Rps extends Component {
                 window.alert('Oponent chose Scisor, you Win!')
              }
           }
+        
           function ClickPaper() {
           
             window.alert('Paper')
@@ -66,10 +91,23 @@ export class Rps extends Component {
              }
          }
     return (<div className="Rps" >
-        <div className= "playerOnes"> Player one {playerOne}</div><div className= "playerTwos"> Player two {playerTwo}</div>
-      <button className= "Rock"  onClick= {ClickRock} >Rock</button>
-      <button className= "Paper" onClick= {ClickPaper}>Paper</button>
-      <button className= "Scisor"  onClick= {ClickScisor} >Scisor</button>
+       
+        <div className= "playerOnes">  {this.state.message}</div><div className= "playerTwos"> Player two {this.playerTwo}</div>
+      <button className= "Rock" 
+       onClick= {() =>{
+          ClickRock()
+         this.changeMessage()
+      }} >Rock</button>
+      <button className= "Paper" 
+      onClick= {() =>{
+         ClickPaper()
+        this.changeMessage2()
+     }}>Paper</button>
+      <button className= "Scisor"  
+       onClick= {() =>{
+         ClickScisor()
+        this.changeMessage3()
+     }} >Scisor</button>
     </div>
     )
   }
