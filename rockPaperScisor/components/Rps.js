@@ -1,12 +1,13 @@
-import React, { Component, value , playerOne, playerTwo} from 'react'
+import React, { Component} from 'react'
 
 export class Rps extends Component {
- 
+   
    constructor() {
       super()
       this.state={
-          message: 'Welcome player One' 
-          
+          message: 'Welcome player One', 
+          message2: 'Player two. Will auto generate moves!',
+         
           }
           }
           
@@ -31,13 +32,17 @@ export class Rps extends Component {
              window.alert('Rock')
              let value = Math.random();
              window.alert(value)
-             const playerOne = 'Rock';
+             var playerOne = 'Rock';
              window.alert(playerOne);
              
             
              if (value < 0.3)
              {
                 window.alert('Oponent chose Rock, its a Tie!')
+                this.setState({
+                  message2: 'Player one chose Rock!'
+              })
+                
              }
              if (value <0.7 && value > 0.3)
              {
@@ -47,6 +52,7 @@ export class Rps extends Component {
              {
                 window.alert('Oponent chose Scisor, you Win!')
              }
+             
           }
         
           function ClickPaper() {
@@ -68,7 +74,7 @@ export class Rps extends Component {
              {
                 window.alert('Oponent chose Scisor, you Lose!')
              }
-         }
+             }
 
          function ClickScisor() {
           
@@ -77,6 +83,8 @@ export class Rps extends Component {
             window.alert(value);
             var playerOne = 'Scisor';
             window.alert(playerOne);
+
+            
             if (value < 0.3)
              {
                 window.alert('Oponent chose Rock, you Lose!')
@@ -89,10 +97,11 @@ export class Rps extends Component {
              {
                 window.alert('Oponent chose Scisor, its a Tie')
              }
-         }
+             }
     return (<div className="Rps" >
        
-        <div className= "playerOnes">  {this.state.message}</div><div className= "playerTwos"> Player two {this.playerTwo}</div>
+        <div className= "playerOnes">  {this.state.message}</div><div className= "playerTwos">{this.state.message2}</div>
+        
       <button className= "Rock" 
        onClick= {() =>{
           ClickRock()
