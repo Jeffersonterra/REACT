@@ -1,0 +1,60 @@
+.App {
+  text-align: center;
+  font-size: 24px;
+  background-color: skyblue;
+}
+.Rock {
+  font-size: 30px;
+  position: absolute;
+  left: 800px;
+  top: 10px;
+  background-color: aqua;
+  border-radius: 10%;
+  width: 100px;
+}
+.Paper {
+  font-size: 30px;
+  position: absolute;
+  left: 900px;
+  top: 100px;
+  background-color: aqua;
+  border-radius: 10%;
+  width: 100px;
+}
+
+.Scisor {
+  position: absolute;
+  left: 700px;
+  font-size: 30px;
+  top: 100px;
+  background-color: aqua;
+  border-radius: 10%;
+  width: 100px;
+}
+.playerOnes {
+  position: absolute;
+  left: 100px;
+  top:50px;
+
+}
+.playerCount{
+  position: absolute;
+  left: 100px;
+  top:100px;
+
+}
+.playerTwos {
+  position: absolute;
+  Right: 100px;
+  top:50px;
+}
+.App {
+  background-color: skyblue;
+  height: 790px;
+  width: 100%;
+}
+.playerTwoCount{
+  position: absolute;
+  Right: 100px;
+  top:100px;
+}
