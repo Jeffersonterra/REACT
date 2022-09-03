@@ -114,7 +114,9 @@ function App() {
      }
   return (
     <div className="App">
-    <div className="playerCount">{count}</div>
+      <div className="Player"> Player One</div>
+      <div className="Player2">Player Two</div>
+       <div className="playerCount">{count}</div>
        <div className="playerOnes">{theme}</div>
        <div className="playerTwoCount">{countTwo}</div>
        <div className="playerTwos">{themeTwo}</div>
