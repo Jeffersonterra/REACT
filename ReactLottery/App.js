@@ -2,6 +2,7 @@ import React, {useState} from 'react';
 import './App.css';
 
 function App() {
+  const [Saldo, setSaldo]= useState(0)
   const [Lot1, setLot1]= useState(0)
   const [Lot2, setLot2]= useState(0)
   const [Lot3, setLot3]= useState(0)
@@ -95,19 +96,21 @@ if (input_value == value10 ) {
 
   return (
     <div className="App">
+      <div className="container">
 
     <div className="lot1">{Lot1}</div><div className="lot2">{Lot2}</div><div className="lot3">{Lot3}</div>
     <div className="lot4">{Lot4}</div><div className="lot5">{Lot5}</div><div className="lot6">{Lot6}</div>
     <div className="lot7">{Lot7}</div><div className="lot8">{Lot8}</div>
     <div className="lot9">{Lot9}</div><div className="lot10">{Lot10}</div>
+      </div>
     <button className="btn" onClick = {girar}> Tente a sorte</button>
     <div>{mensagem}</div>
-    <input id= "lottoNumber"></input>
-    <div>Your Balance is $500,00</div>
+    <input id= "input"></input>
+    <div>Seu saldo e ${Saldo},00 </div>
       <div className = "money">
 
         <input id= "deposit"></input>
-        <button>Deposit</button>
+        <button>Deposito</button>
       </div>
     </div>
   );
