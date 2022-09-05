@@ -13,9 +13,32 @@ function App() {
   const [Lot8, setLot8]= useState(0)
   const [Lot9, setLot9]= useState(0)
   const [Lot10, setLot10]= useState(0)
-  const [mensagem, setMensagem]= useState('Ainda nao temos um ganhador')
+  const [mensagem, setMensagem]= useState('Ainda nao temos um ganhador, escolha seu numero abaixo')
 
+  function addBalance(){
+    var deposit_value = document.getElementById("deposit").value;
+    setSaldo(parseInt(Saldo) + parseInt(deposit_value))
+    console.log('saldo eh do tipo')
+    console.log(typeof(Saldo))
+    console.log('valor do saldo eh' +Saldo)
+    console.log('deposit value eh do tipo')
+    console.log(typeof(deposit_value))
+    console.log('valor do deposi value eh' +deposit_value)
+    
+  }
+  function removeBalance(){
+    var deposit_value = document.getElementById("deposit").value;
+    setSaldo(parseInt(Saldo) - 10)
+    console.log('saldo eh do tipo')
+    console.log(typeof(Saldo))
+    console.log('valor do saldo eh' +Saldo)
+    console.log('deposit value eh do tipo')
+    console.log(typeof(deposit_value))
+    console.log('valor do deposi value eh' +deposit_value)
+    
+  }
 function girar(){
+  removeBalance()
   const value = Math.floor(Math.random() * 101);
   console.log(value);
   setLot1(value)
@@ -46,7 +69,7 @@ function girar(){
   const value10 = Math.floor(Math.random() * 101);
   console.log(value10);
   setLot10(value10)
-  var input_value = document.getElementById("input").value;
+  var input_value = parseInt(document.getElementById("input").value);
   console.log(input_value)
   if (input_value != value ) {
     setMensagem('Tente novamente!')
@@ -108,9 +131,10 @@ if (input_value == value10 ) {
     <input id= "input"></input>
     <div>Seu saldo e ${Saldo},00 </div>
       <div className = "money">
-
-        <input id= "deposit"></input>
-        <button>Deposito</button>
+      <div className="aposta">A aposta sera de $10,00</div>
+        <input id= "deposit" />
+        
+        <button onClick = {addBalance}>Deposito</button>
       </div>
     </div>
   );
