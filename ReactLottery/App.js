@@ -27,8 +27,11 @@ function App() {
     console.log('valor do deposi value eh' +deposit_value)
     
   }
+function aposta (){
 
-
+  var apostar = document.getElementById("apostar").value;
+  setAposta(parseInt(apostar))
+}
 
   
   function removeBalance(){
@@ -41,6 +44,7 @@ function App() {
     
   }
 function girar(){
+  aposta()
   removeBalance()
   const value = Math.floor(Math.random() * 101);
   console.log(value);
@@ -121,8 +125,8 @@ if (input_value == value10 ) {
 }
 
   return (
-    <div className="App">
-      <div className="container">
+    <div className="App" onMouseMove={aposta}>
+      <div className="container" >
 
     <div className="lot1">{Lot1}</div><div className="lot2">{Lot2}</div><div className="lot3">{Lot3}</div>
     <div className="lot4">{Lot4}</div><div className="lot5">{Lot5}</div><div className="lot6">{Lot6}</div>
@@ -140,6 +144,7 @@ if (input_value == value10 ) {
         <div className="aposta">Escolha o numero</div>
         <input id= "input"></input>
         <div className="aposta">A aposta sera de ${Aposta},00</div>
+        <input id= "apostar" ></input>
         </div>
       <div className = "money">
     <div>Seu saldo e ${Saldo},00 </div>
