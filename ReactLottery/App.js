@@ -32,9 +32,7 @@ function App() {
     console.log('saldo eh do tipo')
     console.log(typeof(Saldo))
     console.log('valor do saldo eh' +Saldo)
-    console.log('deposit value eh do tipo')
-    console.log(typeof(deposit_value))
-    console.log('valor do deposi value eh' +deposit_value)
+  
     
   }
 function girar(){
