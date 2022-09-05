@@ -3,6 +3,7 @@ import './App.css';
 
 function App() {
   const [Saldo, setSaldo]= useState(0)
+  const [Aposta, setAposta]= useState(10)
   const [Lot1, setLot1]= useState(0)
   const [Lot2, setLot2]= useState(0)
   const [Lot3, setLot3]= useState(0)
@@ -13,7 +14,7 @@ function App() {
   const [Lot8, setLot8]= useState(0)
   const [Lot9, setLot9]= useState(0)
   const [Lot10, setLot10]= useState(0)
-  const [mensagem, setMensagem]= useState('Ainda nao temos um ganhador, escolha seu numero abaixo')
+  const [mensagem, setMensagem]= useState('Ainda nao temos um ganhador')
 
   function addBalance(){
     var deposit_value = document.getElementById("deposit").value;
@@ -26,13 +27,17 @@ function App() {
     console.log('valor do deposi value eh' +deposit_value)
     
   }
+
+
+
+  
   function removeBalance(){
     var deposit_value = document.getElementById("deposit").value;
-    setSaldo(parseInt(Saldo) - 10)
+    setSaldo(parseInt(Saldo) - parseInt(Aposta))
     console.log('saldo eh do tipo')
     console.log(typeof(Saldo))
     console.log('valor do saldo eh' +Saldo)
-  
+   
     
   }
 function girar(){
@@ -74,44 +79,44 @@ function girar(){
   }
   if (input_value == value ) {
    console.log('Voce Ganhou!!')
-   setMensagem('Voce ganhou!!!')
+   setMensagem('Voce ganhou!!!!!!!!')
 }
 if (input_value == value2 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 
 if (input_value == value3 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 if (input_value == value4 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 if (input_value == value5 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 if (input_value == value6 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 if (input_value == value7 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 if (input_value == value8 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 if (input_value == value9 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 if (input_value == value10 ) {
   console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!')
+  setMensagem('Voce ganhou!!!!!!!!')
 }
 }
 
@@ -124,15 +129,24 @@ if (input_value == value10 ) {
     <div className="lot7">{Lot7}</div><div className="lot8">{Lot8}</div>
     <div className="lot9">{Lot9}</div><div className="lot10">{Lot10}</div>
       </div>
-    <button className="btn" onClick = {girar}> Tente a sorte</button>
+      <div className="container2">
+        <div className="jogo">
+
     <div>{mensagem}</div>
-    <input id= "input"></input>
-    <div>Seu saldo e ${Saldo},00 </div>
+    <button className="btn" onClick = {girar}> Jogue</button>
+        </div>
+        <div>
+
+        <div className="aposta">Escolha o numero</div>
+        <input id= "input"></input>
+        <div className="aposta">A aposta sera de ${Aposta},00</div>
+        </div>
       <div className = "money">
-      <div className="aposta">A aposta sera de $10,00</div>
+    <div>Seu saldo e ${Saldo},00 </div>
         <input id= "deposit" />
         
         <button onClick = {addBalance}>Deposito</button>
+      </div>
       </div>
     </div>
   );
