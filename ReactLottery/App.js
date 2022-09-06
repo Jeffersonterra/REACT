@@ -32,8 +32,8 @@ function aposta (){
   var apostar = document.getElementById("apostar").value;
   setAposta(parseInt(apostar))
 }
+setInterval(aposta)
 
-  
   function removeBalance(){
     var deposit_value = document.getElementById("deposit").value;
     setSaldo(parseInt(Saldo) - parseInt(Aposta))
@@ -125,7 +125,7 @@ if (input_value == value10 ) {
 }
 
   return (
-    <div className="App" onMouseMove={aposta}>
+    <div className="App">
       <div className="container" >
 
     <div className="lot1">{Lot1}</div><div className="lot2">{Lot2}</div><div className="lot3">{Lot3}</div>
