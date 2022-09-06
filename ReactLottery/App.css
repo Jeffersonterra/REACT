@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  background-color: 	#0b1350;
 }
 
 
@@ -7,18 +7,119 @@
   background-color: #282c34;
   height: 30px;
   width: 30px;
-border: 10px;
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
   color: white;
+  font-size: 20px;
+  margin: 10px 0;
+
 }
-
-
-
-
+.lot2{
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+} 
+.lot3{
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+ .lot4 {
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.lot5 {
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.lot6 {
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.lot6 {
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.lot7 {
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.lot8 {
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.lot9 {
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
+.lot10 {
+  background-color: #282c34;
+  height: 30px;
+  width: 30px;
+  color: white;
+  font-size: 20px;
+  margin: 10px 0;
+}
 .lots{
 height: 40px;
 
 
 }
+.container{
+background-color: rgb(17, 100, 133);
+border: 3px solid black;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height:100%;
+  width: 600px;
+  position: relative;
+  left:30%;
+
+}
+.container2{
+  background-color: rgb(17, 100, 133);
+  border: 3px solid black;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height:130px;
+    width: 1000px;
+    position: relative;
+    left:20%;
+  
+  }
