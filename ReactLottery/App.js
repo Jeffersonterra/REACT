@@ -43,6 +43,10 @@ setInterval(aposta)
    
     
   }
+  function ganhou()
+  {
+    setSaldo(parseInt(Saldo) + 10*(parseInt(Aposta)))
+  }
 function girar(){
   aposta()
   removeBalance()
@@ -84,43 +88,53 @@ function girar(){
   if (input_value == value ) {
    console.log('Voce Ganhou!!')
    setMensagem('Voce ganhou!!!!!!!!')
+   ganhou()
 }
 if (input_value == value2 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 
 if (input_value == value3 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 if (input_value == value4 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 if (input_value == value5 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 if (input_value == value6 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 if (input_value == value7 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 if (input_value == value8 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 if (input_value == value9 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 if (input_value == value10 ) {
   console.log('Voce Ganhou!!')
   setMensagem('Voce ganhou!!!!!!!!')
+  ganhou()
 }
 }
 
