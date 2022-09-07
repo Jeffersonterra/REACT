@@ -30,9 +30,13 @@ function App() {
     
   }
 function aposta (){
-
   var apostar = document.getElementById("apostar").value;
-  setAposta(parseInt(apostar))
+  if (apostar>0){
+
+    setAposta(parseInt(apostar))
+  }
+ 
+  
 }
 setInterval(aposta)
 
@@ -117,20 +121,22 @@ function girar(){
         <div>
 
         <div className="aposta">Escolha o numero</div>
-        <input id= "input"></input>
+        <input id= "input" placeholder="Escolha entre 1 e 100"></input>
         <div className="aposta">A aposta sera de ${Aposta},00</div>
-        <input id= "apostar" ></input>
+        <input id= "apostar" placeholder="10"></input>
         </div>
       <div className = "money">
     <div>Seu saldo e ${Saldo},00 </div>
-        <input id= "deposit" />
+        <input id= "deposit" placeholder="Faca seu primeiro deposito" />
         
         <button onClick = {addBalance}>Deposito</button>
       </div>
       </div>
       <div className="partidas" color = "white"> Partidas: {Partidas}</div>
       <div className="placar" color = "white"> Vitorias: {Placar}</div>
+    
     </div>
+    
   );
 }
 
