@@ -46,6 +46,8 @@ setInterval(aposta)
   function ganhou()
   {
     setSaldo(parseInt(Saldo) + 10*(parseInt(Aposta)))
+    console.log('Voce Ganhou!!')
+    setMensagem('Voce ganhou!!!!!!!!')
   }
 function girar(){
   aposta()
@@ -85,57 +87,11 @@ function girar(){
   if (input_value != value ) {
     setMensagem('Tente novamente!')
   }
-  if (input_value == value ) {
-   console.log('Voce Ganhou!!')
-   setMensagem('Voce ganhou!!!!!!!!')
+  if (input_value == value | input_value == value2 | input_value == value3 | input_value == value4 | input_value == value5 | input_value == value6 | input_value == value7 | input_value == value8 | input_value == value9 | input_value == value10) {
+   
    ganhou()
 }
-if (input_value == value2 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
 
-if (input_value == value3 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
-if (input_value == value4 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
-if (input_value == value5 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
-if (input_value == value6 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
-if (input_value == value7 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
-if (input_value == value8 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
-if (input_value == value9 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
-if (input_value == value10 ) {
-  console.log('Voce Ganhou!!')
-  setMensagem('Voce ganhou!!!!!!!!')
-  ganhou()
-}
 }
 
   return (
