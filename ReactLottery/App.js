@@ -51,8 +51,10 @@ setInterval(aposta)
     setSaldo(parseInt(Saldo) + 10*(parseInt(Aposta)))
     console.log('Voce Ganhou!!')
     setMensagem('Voce ganhou!!!!!!!!')
+    setPlacar(Placar + 1)
   }
 function girar(){
+  setPartidas(Partidas + 1)
   aposta()
   removeBalance()
   const value = Math.floor(Math.random() * 101);
