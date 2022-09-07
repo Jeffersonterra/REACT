@@ -4,7 +4,7 @@ import './App.css';
 function App() {
   const [Saldo, setSaldo]= useState(0)
   const [Placar, setPlacar]= useState(0)
-  const [Vitorias, setVitorias]= useState(0)
+  const [Partidas, setPartidas]= useState(0)
   const [Aposta, setAposta]= useState(10)
   const [Lot1, setLot1]= useState(0)
   const [Lot2, setLot2]= useState(0)
@@ -126,7 +126,8 @@ function girar(){
         <button onClick = {addBalance}>Deposito</button>
       </div>
       </div>
-      <div className="placar"> {Placar}</div>
+      <div className="partidas" color = "white"> Partidas: {Partidas}</div>
+      <div className="placar" color = "white"> Vitorias: {Placar}</div>
     </div>
   );
 }
