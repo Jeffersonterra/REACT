@@ -132,10 +132,11 @@ function girar(){
         <button onClick = {addBalance}>Deposito</button>
       </div>
       </div>
-      <div className="placar" color = "white"> Partidas: {Partidas}</div>
-      <div className="placar" color = "white"> Vitorias: {Placar}</div>
-      <div className="saldos" color = "white"> Depositos: $10000,00</div>
-      <div className="saldos" color = "white"> Ganhos: $1000,00</div>
+      <div className="placar" > Partidas: {Partidas}</div>
+      <div className="placar" > Vitorias: {Placar}</div>
+      <div className="saldos" > Depositos: $10000,00</div>
+      <div className="saldos" > Ganhos: $1000,00</div>
+      <div className="saldos" > Usuario: Jefftm</div>
     </div>
     
   );
