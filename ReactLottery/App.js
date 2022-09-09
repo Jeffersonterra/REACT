@@ -1,11 +1,12 @@
 import React, {useState} from 'react';
 import './App.css';
-
 function App() {
   const [Saldo, setSaldo]= useState(0)
   const [Placar, setPlacar]= useState(0)
   const [Partidas, setPartidas]= useState(0)
   const [Aposta, setAposta]= useState(10)
+  const [Depositos, setDepositos]= useState(0)
+  
   const [Lot1, setLot1]= useState(0)
   const [Lot2, setLot2]= useState(0)
   const [Lot3, setLot3]= useState(0)
@@ -21,9 +22,10 @@ function App() {
   function addBalance(){
     var deposit_value = document.getElementById("deposit").value;
     setSaldo(parseInt(Saldo) + parseInt(deposit_value))
+    setDepositos(parseInt(Depositos) + parseInt(deposit_value))
     console.log('saldo eh do tipo')
     console.log(typeof(Saldo))
-    console.log('valor do saldo eh' +Saldo)
+    console.log('valor do saldo eh' + Saldo)
     console.log('deposit value eh do tipo')
     console.log(typeof(deposit_value))
     console.log('valor do deposi value eh' +deposit_value)
@@ -99,9 +101,7 @@ function girar(){
   if (input_value == value | input_value == value2 | input_value == value3 | input_value == value4 | input_value == value5 | input_value == value6 | input_value == value7 | input_value == value8 | input_value == value9 | input_value == value10) {
    
    ganhou()
-}
-
-}
+}}
 
   return (
     <div className="App">
@@ -134,7 +134,7 @@ function girar(){
       </div>
       <div className="placar" > Partidas: {Partidas}</div>
       <div className="placar" > Vitorias: {Placar}</div>
-      <div className="saldos" > Depositos: $10000,00</div>
+      <div className="saldos" > Depositos: ${Depositos},00</div>
       <div className="saldos" > Ganhos: $1000,00</div>
       <div className="saldos" > Usuario: Jefftm</div>
     </div>
