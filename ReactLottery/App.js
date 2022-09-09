@@ -6,6 +6,7 @@ function App() {
   const [Partidas, setPartidas]= useState(0)
   const [Aposta, setAposta]= useState(10)
   const [Depositos, setDepositos]= useState(0)
+  const [Ganhos, setGanhos]= useState(0)
   
   const [Lot1, setLot1]= useState(0)
   const [Lot2, setLot2]= useState(0)
@@ -55,6 +56,7 @@ setInterval(aposta)
   function ganhou()
   {
     setSaldo(parseInt(Saldo) + 10*(parseInt(Aposta)))
+    setGanhos(parseInt(Ganhos) + 10*(parseInt(Aposta)))
     console.log('Voce Ganhou!!')
     setMensagem('Voce ganhou!!!!!!!!')
     setPlacar(Placar + 1)
@@ -135,7 +137,7 @@ function girar(){
       <div className="placar" > Partidas: {Partidas}</div>
       <div className="placar" > Vitorias: {Placar}</div>
       <div className="saldos" > Depositos: ${Depositos},00</div>
-      <div className="saldos" > Ganhos: $1000,00</div>
+      <div className="saldos" > Ganhos: ${Ganhos},00</div>
       <div className="saldos" > Usuario: Jefftm</div>
     </div>
     
