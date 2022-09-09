@@ -41,7 +41,8 @@ function aposta (){
  
   
 }
-setInterval(aposta)
+// Optei por setInterval 500 para nao recalcular com uma frequencia alta demais mas poderia se qualquer outro valor 
+setInterval(aposta, 500)
 
   function removeBalance(){
     var deposit_value = document.getElementById("deposit").value;
