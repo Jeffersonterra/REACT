@@ -1,5 +1,5 @@
 .App {
-  background-color: 	#0b1350;
+  background: linear-gradient(#0b1350,#282c34);
 }
 
 
@@ -98,7 +98,7 @@ height: 40px;
 
 }
 .container{
-background-color: rgb(17, 100, 133);
+  background: linear-gradient(rgb(17, 100, 133),#384155); 
 border: 3px solid black;
   text-align: center;
   display: flex;
@@ -111,7 +111,7 @@ border: 3px solid black;
 
 }
 .container2{
-  background-color: rgb(17, 100, 133);
+  background: linear-gradient(rgb(17, 100, 133),#38404f); 
   border: 3px solid black;
     text-align: center;
     display: flex;
@@ -133,10 +133,19 @@ border: 3px solid black;
     border: 3px solid black;
   }
   
-  .partidas {
+  .saldos {
     background-color: #282c34;
     height: 30px;
-    width: 120px;
+    width: 220px;
+    color: white;
+    font-size: 20px;
+    margin: 10px 0;
+    border: 3px solid black;
+  }
+  #Usuario {
+    background-color: #282c34;
+    height: 30px;
+    width: 420px;
     color: white;
     font-size: 20px;
     margin: 10px 0;
